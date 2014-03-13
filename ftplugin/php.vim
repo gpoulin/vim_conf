@@ -13,7 +13,7 @@ let g:syntastic_php_checkers = ['php', 'phpcs']
 let g:syntastic_php_phpcs_args = "--standard=PSR2"
 
 let &colorcolumn="80,".join(range(120,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
+highlight ColorColumn ctermbg=235 guibg=#080B17
 
 
 

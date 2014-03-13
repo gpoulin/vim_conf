@@ -1,5 +1,5 @@
 let &colorcolumn="80,".join(range(80,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
+highlight ColorColumn ctermbg=235 guibg=#080B17
 
 " Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=darkred guibg=#382424

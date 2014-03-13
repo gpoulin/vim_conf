@@ -53,7 +53,7 @@ set mouse=a
 
 " Set the command window height to 2 lines, to avoid many cases of having to
 " "press <Enter> to continue"
-set cmdheight=2
+" set cmdheight=2
 
 " Display line numbers on the left
 set number
@@ -144,12 +144,11 @@ endif
 "let g:pathogen_disabled =[]
 "call add(g:pathogen_disabled, 'vim-phpqa')
 
-if has("gui_running")
+"if has("gui_running")
     python from powerline.vim import setup as powerline_setup
     python powerline_setup()
     python del powerline_setup
-    set guifont=Liberation\ Mono\ for\ Powerline\ 10
-endif
+"endif
 
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
 call pathogen#infect()
