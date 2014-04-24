@@ -2,6 +2,7 @@ colorscheme blackboard
 
 "map go to definition
 nnoremap <silent><Leader>g <C-w><C-]><C-w>T
+map <Leader>b Oextract(\Psy\Shell::debug(get_defined_vars()));  # BREAKPOINT<C-c>:w<CR>
 
 
 set shiftwidth=4

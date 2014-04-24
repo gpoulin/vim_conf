@@ -141,6 +141,9 @@ else " no gui
   endif
 endif
 
+if has("gui_running")
+    set guifont=Liberation\ Mono\ for\ Powerline\ 10
+endif
 "let g:pathogen_disabled =[]
 "call add(g:pathogen_disabled, 'vim-phpqa')
 
@@ -153,3 +156,4 @@ endif
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
 call pathogen#infect()
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']

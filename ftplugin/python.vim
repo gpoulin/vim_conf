@@ -1,6 +1,12 @@
 let &colorcolumn="80,".join(range(80,999),",")
 highlight ColorColumn ctermbg=235 guibg=#080B17
 
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+set spelllang=
+
 " Highlight EOL whitespace, http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=darkred guibg=#382424
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -12,7 +18,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 let g:jedi#usage_command = "<leader>z"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+map <Leader>b Oimport ipdb; ipdb.set_trace()  # BREAKPOINT<C-c>:w<CR>
 
 "Do code check
 let g:syntastic_python_checkers=['flake8']
