@@ -148,6 +148,7 @@ if has("gui_running")
     python from powerline.vim import setup as powerline_setup
     python powerline_setup()
     python del powerline_setup
+    set guifont=Liberation\ Mono\ for\ Powerline\ 10
 endif
 
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
